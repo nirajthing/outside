@@ -1,0 +1,176 @@
+/*
+              Table of Content
+              1: Global CSS
+              2: Headings
+              3: Fonts Family
+              4: Font Colors
+              5: Font Size
+              6: Font-Weight
+              7: Margins
+              8: Paddings
+              9: Return to Top
+              10: Page Not Found
+              11: Border-radius
+              12: Positions
+             
+*/
+
+// 1: Global CSS Start
+body {
+  font-family: $Inter;
+  overflow-x: hidden;
+  position: relative;
+  color: $text-dark;
+}
+a {
+  text-decoration: none;
+  text-underline-offset: 2px;
+  @include transition();
+}
+ul,
+ol {
+  padding-left: 0;
+}
+img {
+  max-width: 100%;
+}
+// 1: Global CSS End
+
+//2: Headings Start
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  // font-family: $heading-font;
+  font-weight: 700;
+  color: #363400;
+}
+h2 {
+  font-size: 2.5rem !important;
+}
+//2: Headings End
+
+// 3: Fonts Family Start
+
+.font-roboto {
+  // font-family: $heading-font;
+}
+.font-inter {
+  // font-family: $inter;
+}
+
+// 3: Fonts Family End
+
+// 4: Font Colors Start
+.text-danger {
+  color: red;
+}
+.text-grey {
+  color: $text-grey !important;
+}
+.text-secondary {
+  color: $secondary !important;
+}
+// 4: Font Colors End
+
+// 5: Font Size Start
+.font-8 {
+  font-size: 0.5rem !important;
+}
+.font-10 {
+  font-size: 0.625rem !important;
+}
+.font-12 {
+  font-size: 0.75rem !important;
+}
+.font-14 {
+  font-size: 0.875rem !important;
+}
+.font-16 {
+  font-size: 1rem !important;
+}
+.font-18 {
+  font-size: 1.125rem !important;
+}
+.font-20 {
+  font-size: 1.25rem !important;
+}
+.font-24 {
+  font-size: 1.5rem !important;
+}
+.font-32 {
+  font-size: 2rem !important;
+}
+.font-36 {
+  font-size: 2.25rem !important;
+}
+.font-40 {
+  font-size: 2.5rem !important;
+}
+.font-48 {
+  font-size: 3rem !important;
+}
+.ls-1 {
+  letter-spacing: 1px;
+}
+// 5: Font Size End
+
+// 6: Font Weights Start
+.fw-400 {
+  font-weight: 400;
+}
+.fw-500 {
+  font-weight: 500;
+}
+.fw-600 {
+  font-weight: 600;
+}
+.fw-700 {
+  font-weight: 700;
+}
+.fw-900 {
+  font-weight: 900;
+}
+// 6: Font Weights End
+
+// 9: Return to Top Start
+#return-to-top {
+  position: fixed;
+  z-index: 99;
+  bottom: 70px;
+  right: 2%;
+  background: $primary;
+  width: 50px;
+  height: 50px;
+  display: none;
+  text-decoration: none;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  border-radius: 35px;
+  line-height: 50px;
+  text-align: center;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#return-to-top svg {
+  margin: 0;
+  stroke: #fff;
+  position: relative;
+  left: 0;
+  top: 0;
+  font-size: 1.875rem;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  &:hover {
+    margin-top: -6px;
+  }
+}
+// 9: Return to Top Start
