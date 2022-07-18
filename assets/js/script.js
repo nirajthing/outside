@@ -1,4 +1,9 @@
 $(document).ready(function () {
+  function loaderClose() {
+    $("#loading-bar-spinner").fadeOut();
+  }
+  setTimeout(loaderClose, 1000);
+
   $(".close-btn").on("click", function () {
     $(".navbar-collapse").removeClass("show");
   });
@@ -7,12 +12,8 @@ $(document).ready(function () {
   });
   $(".owl-beneficiaries").owlCarousel({
     margin: 25,
-    autoplay: true,
     nav: false,
     dots: false,
-    autoplayTimeout: 5000,
-    autoplayHoverPause: false,
-    autoplayHoverPause: true,
     responsive: {
       0: {
         items: 1,

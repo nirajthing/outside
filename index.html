@@ -25,6 +25,12 @@
 </head>
 
 <body>
+  <!-- LOADER -->
+  <div id="loading-bar-spinner" class="spinner">
+    <div class="spinner-icon"></div>
+  </div>
+  <!-- LOADER END -->
+
   <!-- HEADER -->
   <header>
     <div class="header-section-wrapper">
@@ -45,40 +51,43 @@
         </div>
       </div>
       <div class="navbar-section">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container-fluid">
-                  <a class="navbar-brand p-0" href="#">
-                    <img src="./assets//images/logo-navbar.png" alt="">
-                  </a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="side-menu-header d-flex d-lg-none justify-content-between align-items-center">
-                      <a class="navbar-brand p-0" href="#">
-                        <img src="./assets//images/logo-white.svg" alt="">
-                      </a>
-                      <div class="close-btn"><img src="./assets/images/close.svg" alt=""></div>
-                    </div>
-                    <div class="navbar-nav ms-auto">
-                      <a class="nav-link" href="#">Founders</a>
-                      <a class="nav-link" href="#">Beneficiaries</a>
-                      <a class="nav-link" href="#">Scholarships</a>
-                      <a class="nav-link" href="#">Press</a>
-                      <a class="nav-link" href="#">Blog</a>
-                      <a class="nav-link" href="#">Contact</a>
-                    </div>
-                  </div>
-                </div>
-              </nav>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand p-0" href="#">
+            <img src="./assets//images/logo-navbar.png" alt="logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="side-menu-header d-flex d-lg-none justify-content-between align-items-center">
+              <a class="navbar-brand p-0" href="#">
+                <img src="./assets//images/logo-white.svg" alt="logo">
+              </a>
+              <div class="close-btn"><img src="./assets/images/close.svg" alt="close icon"></div>
             </div>
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Founders</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Beneficiaries</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Scholarships</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Press</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
           </div>
-        </div>
+        </nav>
       </div>
     </div>
 
@@ -87,36 +96,30 @@
 
   <!-- HERO -->
   <section class="page-section page-section_intro bg-dusty-pink">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="page-section_intro__header">
-            <div class="row align-items-end">
-              <div class="col-md-9">
-                <div class="page-section_intro__heading">
-                  <h1>Ullamcorper diam turpis egestas egestas fames enim risus sed proin</h1>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="page-section_intro__readmore">
-                  <a class="text-bold d-inline-block" href="#">Read more <i class="fa fa-chevron-right"></i></a>
-                </div>
-              </div>
+    <div class="custom-space-left bg-white">
+      <div class="page-section_intro__header">
+        <div class="row align-items-end">
+          <div class="col-md-9">
+            <div class="page-section_intro__heading">
+              <h1>Ullamcorper diam turpis egestas egestas fames enim risus sed proin</h1>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="page-section_intro__readmore text-md-end">
+              <a class="text-bold d-inline-block" href="#">Read more <i class="fa fa-chevron-right"></i></a>
             </div>
           </div>
         </div>
-        <div class="col-md-12">
-          <div class="hero-img">
-            <img src="./assets/images/hero.png" alt="hero image">
-          </div>
-        </div>
       </div>
+    </div>
+    <div class="img-custom-space-left">
+      <img src="./assets/images/hero.png" alt="intro background">
     </div>
   </section>
   <!-- HERO END-->
 
   <!-- NEWS -->
-  <!-- <section class="page-section page-section_news bg-dusty-pink">
+  <section class="page-section page-section_news bg-dusty-pink">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -165,7 +168,8 @@
                     <h6>2020</h6>
                   </div>
                   <div class="news-card__title">
-                    <p class="large-text">Molestie molesti metus, tempus in commodo, semper tellus</p>
+                    <p class="large-text">In faucibus suspendisse magna massa nibh elementum augue phasellus tristique
+                      senectus urna</p>
                   </div>
                 </a>
                 <a href="#" class="news-card">
@@ -177,7 +181,7 @@
                     <h6>2020</h6>
                   </div>
                   <div class="news-card__title">
-                    <p class="large-text">Molestie molesti metus, tempus in commodo, semper tellus</p>
+                    <p class="large-text">Feugiat mollis quam sollicitudin egestas adipiscing amet</p>
                   </div>
                 </a>
               </div>
@@ -186,15 +190,15 @@
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
   <!-- NEWS END-->
 
   <!-- MISSION -->
   <section class="page-section page-section_mission bg-dusty-pink">
-    <div class="color-wrapper bg-red-dark">
-      <div class="container">
+    <div class="custom-space-right bg-red-dark">
+      <div class="page-section_mission__header">
         <div class="row">
-          <div class="col-md-8">
+          <div class="col-md-9">
             <div class="page-section__title page-section__title--white">
               <h5>our mission</h5>
             </div>
@@ -210,7 +214,9 @@
         </div>
       </div>
     </div>
-    <img class="mission-image__" src="./assets/images/mission.png" alt="mission">
+    <div class="img-custom-space-right">
+      <img class="mission-image__" src="./assets/images/mission.png" alt="mission background">
+    </div>
   </section>
   <!-- MISSION END-->
 
@@ -226,37 +232,37 @@
         <div class="col-md-12">
           <div class="owl-carousel owl-theme owl-beneficiaries">
             <div class="beneficiary">
-              <img class="beneficiary__image" src="./assets/images/bene1.png" alt="bene1">
+              <img class="beneficiary__image" src="./assets/images/bene1.png" alt="beneficiary">
               <div class="beneficiary__text">
                 <p class="large-text">Morbi magna turpis dolor adipiscing</p>
               </div>
             </div>
             <div class="beneficiary">
-              <img class="beneficiary__image" src="./assets/images/bene2.png" alt="bene1">
+              <img class="beneficiary__image" src="./assets/images/bene2.png" alt="beneficiary">
               <div class="beneficiary__text">
-                <p class="large-text">Morbi magna turpis dolor adipiscing</p>
+                <p class="large-text">Curabitur cursus bibendum mauris placerat</p>
               </div>
             </div>
             <div class="beneficiary">
-              <img class="beneficiary__image" src="./assets/images/bene3.png" alt="bene1">
+              <img class="beneficiary__image" src="./assets/images/bene3.png" alt="beneficiary">
               <div class="beneficiary__text">
-                <p class="large-text">Morbi magna turpis dolor adipiscing</p>
+                <p class="large-text">Sagittis quam nunc platea est</p>
               </div>
             </div>
             <div class="beneficiary">
-              <img class="beneficiary__image" src="./assets/images/bene4.png" alt="bene1">
+              <img class="beneficiary__image" src="./assets/images/bene4.png" alt="beneficiary">
               <div class="beneficiary__text">
-                <p class="large-text">Morbi magna turpis dolor adipiscing</p>
+                <p class="large-text">Nisi, sed dui, ac enim</p>
               </div>
             </div>
             <div class="beneficiary">
-              <img class="beneficiary__image" src="./assets/images/bene2.png" alt="bene1">
+              <img class="beneficiary__image" src="./assets/images/bene2.png" alt="beneficiary">
               <div class="beneficiary__text">
-                <p class="large-text">Morbi magna turpis dolor adipiscing</p>
+                <p class="large-text">Vitae sodales sit id ullamcorper</p>
               </div>
             </div>
             <div class="beneficiary">
-              <img class="beneficiary__image" src="./assets/images/bene1.png" alt="bene1">
+              <img class="beneficiary__image" src="./assets/images/bene1.png" alt="beneficiary">
               <div class="beneficiary__text">
                 <p class="large-text">Morbi magna turpis dolor adipiscing</p>
               </div>
@@ -287,13 +293,13 @@
           <div class="col-md-12">
             <div class="d-none d-lg-block owl-carousel owl-theme owl-founders">
               <div class="founder">
-                <img class="founder__image" src="./assets/images/founder1.png" alt="">
+                <img class="founder__image" src="./assets/images/founder1.png" alt="founder">
                 <div class="founder__name">
                   <h2 class="text-white">Maria Kenter</h2>
                 </div>
               </div>
               <div class="founder">
-                <img class="founder__image" src="./assets/images/founder2.jpeg" alt="">
+                <img class="founder__image" src="./assets/images/founder2.jpg" alt="founder">
                 <div class="founder__name">
                   <h2 class="text-white">Roger Septimus</h2>
                 </div>
@@ -301,7 +307,7 @@
             </div>
             <div class="d-block d-lg-none founders-mbl">
               <div class="founder">
-                <img class="founder__image" src="./assets/images/founder1.png" alt="">
+                <img class="founder__image" src="./assets/images/founder1.png" alt="founder">
                 <div class="founder__name">
                   <a href="#">
                     <h2 class="text-white">Maria Kenter <i class="far fa-chevron-right"></i></h2>
@@ -309,7 +315,7 @@
                 </div>
               </div>
               <div class="founder">
-                <img class="founder__image" src="./assets/images/founder2.jpeg" alt="">
+                <img class="founder__image" src="./assets/images/founder2.jpg" alt="founder">
                 <div class="founder__name">
                   <a href="#">
                     <h2 class="text-white">Roger Septimus <i class="far fa-chevron-right"></i></h2>
@@ -336,19 +342,19 @@
         <div class="col-md-12">
           <div class="owl-carousel owl-theme owl-gallery">
             <a href="./assets/images/gal1.jpg" class="gallery-card">
-              <img class="gallery-card__image" src="./assets/images/gal1.jpg" alt="">
+              <img class="gallery-card__image" src="./assets/images/gal1.jpg" alt="gallery 1">
               <div class="gallery-card__text">
                 <p>Caption lorem ipsum dolor sit amet</p>
               </div>
             </a>
             <a href="./assets/images/gal2.png" class="gallery-card">
-              <img class="gallery-card__image" src="./assets/images/gal2.png" alt="">
+              <img class="gallery-card__image" src="./assets/images/gal2.png" alt="gallery 2">
               <div class="gallery-card__text">
                 <p>Caption lorem ipsum dolor sit amet</p>
               </div>
             </a>
             <a href="./assets/images/gal3.png" class="gallery-card">
-              <img class="gallery-card__image" src="./assets/images/gal3.png" alt="">
+              <img class="gallery-card__image" src="./assets/images/gal3.png" alt="gallery 3">
               <div class="gallery-card__text">
                 <p>Caption lorem ipsum dolor sit amet</p>
               </div>
@@ -366,7 +372,7 @@
         <div class="col-md-12">
           <div class="footer-top-section">
             <div class="footer-logo">
-              <img class="footer-logo__image" src="assets/images/logo-white.svg" alt="">
+              <img class="footer-logo__image" src="assets/images/logo-white.svg" alt="logo white">
             </div>
             <ul class="footer-social d-flex d-lg-none">
               <li class="footer-social__link">

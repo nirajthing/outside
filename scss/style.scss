@@ -1,14 +1,15 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 // IMPORTING SCSS COMPONENTS
+@import "base/mixins";
 @import "base/typography";
+@import "base/container";
 @import "base/colors";
 @import "base/animations";
 @import "base/base";
 @import "base/buttons";
 @import "base/footer";
 @import "base/header";
-@import "base/mixins";
 
 // IMPORTING SCSS SECTIONS
 @import "sections/beneficiaries";
