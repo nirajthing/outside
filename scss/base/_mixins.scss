@@ -4,3 +4,11 @@
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
+
+@mixin h3-prop {
+  font-size: 1.25rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  font-family: $Galaxie;
+  font-weight: 400;
+}
