@@ -1,0 +1,65 @@
+.page-section_intro__header {
+  margin-bottom: 2.5rem;
+  .page-section_intro__heading {
+    margin-bottom: 1.25rem;
+  }
+  @media (min-width: 991px) {
+    .page-section_intro__heading {
+      margin-bottom: 0;
+    }
+  }
+  .page-section_intro__heading h1 {
+    color: $primary;
+  }
+  @media (min-width: 991px) {
+    .page-section_intro__readmore {
+      margin-bottom: 1rem;
+    }
+  }
+  .page-section_intro__readmore a {
+    padding: 0.8125rem;
+    padding-right: 3.3125rem;
+    border: 1px solid $mid-grey;
+    border-radius: 0.125rem;
+    color: $text-dark;
+    position: relative;
+    &:hover i {
+      right: 20px;
+    }
+    &:hover {
+      color: $primary;
+    }
+    &::before {
+      content: "";
+      width: 1px;
+      height: 100%;
+      background: #c4c4c4;
+      top: 0;
+      bottom: 0;
+      position: absolute;
+      right: 40px;
+    }
+    & > i {
+      position: absolute;
+      right: 15px;
+    }
+  }
+  @media (min-width: 991px) {
+    .page-section_intro__readmore a {
+      padding: 1.4375rem;
+      padding-right: 5.75rem;
+      &::before {
+        right: 70px;
+      }
+      & > i {
+        position: absolute;
+        right: 30px;
+      }
+    }
+  }
+}
+@media (min-width: 991px) {
+  .page-section_intro__header {
+    margin-bottom: 5rem;
+  }
+}

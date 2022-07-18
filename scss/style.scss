@@ -1,35 +1,8 @@
-$theme-colors: (
-  "primary": #ee6f2d,
-  "secondary": #184890,
-  "dark": #000000,
-  "light": #f6f8f9,
-);
-
-//colors
-$primary: #ee6f2d;
-$secondary: #184890;
-$primary-dark: #ea5e15;
-$text-dark: #1b2124;
-$text-grey: #8d9091;
-$dark: #000000;
-$light: #ffffff;
-
-@font-face {
-  font-family: "Galaxie";
-  src: url(../../assets/fonts/GalaxieCopernicus-Book.otf) format("opentype");
-}
-@font-face {
-  font-family: "Inter";
-  src: url(../../assets/fonts//Inter-Variable.ttf) format("truetype");
-}
-
-//fonts
-$Inter: "Inter";
-$Galaxie: "Galaxie";
-
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 // IMPORTING SCSS COMPONENTS
+@import "base/typography";
+@import "base/colors";
 @import "base/animations";
 @import "base/base";
 @import "base/buttons";
