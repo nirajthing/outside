@@ -1,0 +1,11 @@
+.owl-gallery .owl-item {
+  border: 1px solid $dusty-pink;
+  padding: 2.5rem;
+  .gallery-card__image {
+    margin-bottom: 0.75rem;
+  }
+  .gallery-card__text p {
+    color: $text-grey;
+    margin-bottom: 0;
+  }
+}

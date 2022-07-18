@@ -1,0 +1,17 @@
+.page-section_beneficiaries {
+  margin-top: 5rem;
+  .owl-stage {
+    left: -60px;
+    @media (min-width: 991px) {
+      left: unset;
+    }
+  }
+}
+.owl-beneficiaries .owl-stage-outer {
+  @media (min-width: 991px) {
+    overflow: unset;
+  }
+}
+.beneficiary__image {
+  margin-bottom: 1.25rem;
+}

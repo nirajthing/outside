@@ -1,0 +1,30 @@
+.page-section_mission {
+  .color-wrapper {
+    padding-top: 5rem;
+    padding-bottom: 8.5rem;
+    @media (min-width: 991px) {
+      padding-bottom: 22.6875rem;
+    }
+  }
+  .page-section__title {
+    margin-bottom: 2rem;
+  }
+  .page-section__heading {
+    margin-bottom: 1.25rem;
+  }
+  .page-section__subline {
+    @media (min-width: 991px) {
+      padding-right: 17.5rem;
+    }
+    p {
+      margin-bottom: 0;
+    }
+  }
+  .page-section__heading,
+  .page-section__subline {
+    color: $light;
+  }
+  img {
+    margin-top: calc(-35.3125rem + 22.6875rem - 5rem);
+  }
+}

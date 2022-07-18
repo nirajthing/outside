@@ -1,0 +1,103 @@
+header {
+  margin-bottom: 15.375rem;
+  .header-section-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 2;
+    background: #fff;
+    @include transition;
+  }
+
+  .social-links__link i {
+    color: $text-grey;
+    @include transition;
+    font-size: 1rem;
+  }
+  @media (min-width: 991px) {
+    .social-links__link i {
+      font-size: 1.25rem;
+    }
+  }
+  .social-links__link {
+    line-height: 1;
+  }
+  .social-links__link:hover i {
+    color: $primary;
+  }
+  .navbar {
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
+    @include transition;
+  }
+  @media (min-width: 991px) {
+    .navbar {
+      padding-top: 4.375rem;
+      padding-bottom: 4.375rem;
+    }
+  }
+  .navbar-light .navbar-nav .nav-link,
+  .navbar-expand-lg .navbar-nav .nav-link {
+    color: $text-dark;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+    font-weight: 400;
+    padding-right: 1.875rem;
+    padding-left: 1.875rem;
+    @include transition;
+  }
+  .navbar-light .navbar-nav .nav-link:hover {
+    color: $primary;
+  }
+  .navbar-light .navbar-toggler {
+    border: none;
+    padding: 0;
+  }
+  @media (max-width: 991.98px) {
+    .navbar-collapse {
+      padding: 34px 32px;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      z-index: 2;
+      overflow-y: scroll;
+      background: $primary;
+      display: block !important;
+      color: #fff;
+      -webkit-transform: translate(-100%, 0);
+      -moz-transform: translate(-100%, 0);
+      -o-transform: translate(-100%, 0);
+      transform: translate(-100%, 0);
+      @include transition;
+      &.show {
+        transform: none;
+      }
+      .side-menu-header {
+        padding-bottom: 3.5rem;
+      }
+    }
+    .navbar-light .navbar-nav .nav-link,
+    .navbar-expand-lg .navbar-nav .nav-link {
+      color: $light;
+      padding: 16px 0;
+      border-top: 1px solid rgba(196, 196, 196, 0.1);
+    }
+  }
+}
+.top-bar-moveup {
+  @include transition;
+  margin-top: -3.75rem;
+  border-bottom: 1px solid $mid-grey;
+}
+@media (min-width: 991px) {
+  header .navbar-shrink {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
