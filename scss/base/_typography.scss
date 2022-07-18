@@ -1,0 +1,128 @@
+@font-face {
+  font-family: "Galaxie";
+  src: url(../../assets/fonts/GalaxieCopernicus-Book.otf) format("opentype");
+}
+@font-face {
+  font-family: "Inter";
+  src: url(../../assets/fonts//Inter-Variable.ttf) format("truetype");
+}
+
+//fonts
+$Inter: "Inter";
+$Galaxie: "Galaxie";
+
+h1 {
+  font-size: 28px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  font-family: $Galaxie;
+  font-weight: 400;
+}
+h2 {
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  font-family: $Galaxie;
+  font-weight: 400;
+}
+h3 {
+  font-size: 1.25rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  font-family: $Galaxie;
+  font-weight: 400;
+}
+h4 {
+  font-size: 1.125rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  font-family: $Galaxie;
+  font-weight: 400;
+}
+h5 {
+  font-size: 0.875rem;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  font-family: $Inter;
+  font-weight: 700;
+}
+h6 {
+  font-size: 0.625rem;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  font-family: $Inter;
+  font-weight: 700;
+}
+p {
+  font-size: 0.75rem;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+}
+.large-text {
+  font-size: .875rem;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+  font-family: $Galaxie;
+  font-weight: 400;
+}
+.text-bold {
+  font-size: 0.875rem;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  font-family: $Inter;
+  font-weight: 700;
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 4rem;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+  }
+  h2 {
+    font-size: 2.75rem;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+  h3 {
+    font-size: 2rem;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+  h4 {
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+  h5 {
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: 0.05em;
+  }
+  h6 {
+    font-size: 0.875rem;
+    line-height: 1;
+    letter-spacing: 0.05em;
+  }
+  p {
+    font-size: 0.875rem;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+    font-weight: 400;
+  }
+  .large-text {
+    font-size: 1.125rem;
+    line-height: 1.4;
+    letter-spacing: -0.01em;
+    font-family: $Galaxie;
+    font-weight: 400;
+  }
+  .text-bold {
+    font-size: 1.125rem;
+    line-height: 1;
+    letter-spacing: 0.02em;
+    font-family: $Inter;
+    font-weight: 700;
+  }
+}

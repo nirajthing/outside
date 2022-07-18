@@ -1,0 +1,28 @@
+$theme-colors: (
+  "primary": #003a92,
+  "dark": #3c3c3c,
+  "grey": #74788a,
+);
+
+//colors
+$primary: #003a92;
+$primary-dark: #002458;
+$text-dark: #3c3c3c;
+$mid-grey: #c4c4c4;
+$dusty-pink: #f2efee;
+$text-grey: #74788a;
+$dark: #000000;
+$light: #ffffff;
+
+.bg-dusty-pink {
+  background-color: #f2efee;
+}
+.bg-red-dark {
+  background-color: #8c2531;
+}
+.bg-beige {
+  background-color: #d7c3ae;
+}
+.bg-dark-grey {
+  background-color: #3c3c3c;
+}
