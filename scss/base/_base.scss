@@ -56,7 +56,10 @@ img {
     padding-bottom: 7.5rem;
   }
   .page-section__title {
-    margin-bottom: 3.75rem;
+    margin-bottom: 1rem;
+    @media (min-width: 991px) {
+      margin-bottom: 3.75rem;
+    }
     & > h5 {
       color: $primary;
       text-transform: uppercase;
@@ -177,46 +180,6 @@ img {
 
 // 8: padding end
 
-// 9: Return to Top Start
-#return-to-top {
-  position: fixed;
-  z-index: 99;
-  bottom: 70px;
-  right: 2%;
-  background: $primary;
-  width: 50px;
-  height: 50px;
-  display: none;
-  text-decoration: none;
-  -webkit-border-radius: 35px;
-  -moz-border-radius: 35px;
-  border-radius: 35px;
-  line-height: 50px;
-  text-align: center;
-  -webkit-transition: all 0.3s linear;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-#return-to-top svg {
-  margin: 0;
-  stroke: $light;
-  position: relative;
-  left: 0;
-  top: 0;
-  font-size: 1.875rem;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  &:hover {
-    margin-top: -6px;
-  }
-}
-// 9: Return to Top Start
-
 .custom-space-left {
   padding: 0 2rem 8.5rem 1rem;
   margin-left: 1rem;
@@ -305,6 +268,9 @@ img {
 
   img {
     width: 100%;
+    @media (min-width: 1440px) {
+      height: 565px;
+    }
   }
 }
 
@@ -338,5 +304,8 @@ img {
 
   img {
     width: 100%;
+    @media (min-width: 1440px) {
+      height: 565px;
+    }
   }
 }

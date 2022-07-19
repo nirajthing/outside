@@ -7,9 +7,11 @@
     }
   }
 }
-.owl-beneficiaries .owl-stage-outer {
-  @media (min-width: 991px) {
-    overflow: unset;
+.owl-beneficiaries {
+  .owl-stage-outer {
+    @media (min-width: 991px) {
+      overflow: unset;
+    }
   }
 }
 .beneficiary__image {
