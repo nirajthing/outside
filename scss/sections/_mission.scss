@@ -1,24 +1,21 @@
-.page-section_mission {
-  .page-section_mission__header {
-    padding-top: 5rem;
-
-    .page-section__title {
-      margin-bottom: 2rem;
+.page-section_mission__header {
+  padding-top: 5rem;
+  .page-section__title {
+    margin-bottom: 2rem;
+  }
+  .page-section__heading {
+    margin-bottom: 1.25rem;
+  }
+  .page-section__subline {
+    @media (min-width: 991px) {
+      padding-right: 17.5rem;
     }
-    .page-section__heading {
-      margin-bottom: 1.25rem;
+    p {
+      margin-bottom: 0;
     }
-    .page-section__subline {
-      @media (min-width: 991px) {
-        padding-right: 17.5rem;
-      }
-      p {
-        margin-bottom: 0;
-      }
-    }
-    .page-section__heading,
-    .page-section__subline {
-      color: $light;
-    }
+  }
+  .page-section__heading,
+  .page-section__subline {
+    color: $light;
   }
 }

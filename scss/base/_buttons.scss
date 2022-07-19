@@ -1,0 +1,12 @@
+.view-all {
+  color: $text-dark;
+  border-bottom: 1px solid $mid-grey;
+  padding-bottom: 0.875rem;
+  i {
+    margin-left: 0.75rem;
+  }
+  &:hover {
+    color: $primary;
+    border-color: $primary;
+  }
+}

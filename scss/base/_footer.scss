@@ -45,6 +45,9 @@ footer {
         a {
           color: $light;
           text-transform: capitalize;
+          &:hover {
+            opacity: 0.5;
+          }
         }
       }
     }

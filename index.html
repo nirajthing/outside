@@ -5,23 +5,31 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test project for Outside Tech</title>
+  <meta name="description" content="This is a test description for outside tech.">
+  <!-- Social Media tags -->
+  <meta property="og:title" content="Test project for Outside Tech">
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/img/logo-navbar.png">
+  <meta property="og:url" content="http://outside/index.html">
+  <meta property="og:description" content="This is a test description.">
+  <meta property="og:site_name" content="Outsite Tech">
+  <meta name="twitter:card" content="Test project for Outside Tech">
+  <meta name="twitter:image:alt" content="outside tech">
   <!-- Owl Carousel -->
-  <link rel="stylesheet" type="text/css"
+  <link rel=" stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-
   <!-- Light Gallery -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.7.3/css/lightgallery.min.css">
-
   <!-- Custom CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="shortcut icon" href="assets/img/favicon.png">
-  <title>Test project for Outside Tech</title>
+  <link rel="shortcut icon" href="assets/images/favicon.png">
+
 </head>
 
 <body>
@@ -67,14 +75,53 @@
               <div class="close-btn"><img src="./assets/images/close.svg" alt="close icon"></div>
             </div>
             <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
+              <li class="nav-item mega_menu_dropdown">
                 <a class="nav-link" href="#">Founders</a>
+                <div class="mega_menu">
+                  <div class="mega_menu_item">
+                    <a href="#">
+                      <h3>Maria Kenter</h3>
+                    </a>
+                    <a href="#">
+                      <h3>Roger Septimus</h3>
+                    </a>
+                  </div>
+                </div>
               </li>
-              <li class="nav-item">
+              <li class="nav-item mega_menu_dropdown">
                 <a class="nav-link" href="#">Beneficiaries</a>
+                <div class="mega_menu">
+                  <div class="mega_menu_item">
+                    <a href="#">
+                      <h3>Morbi magna turpis dolor adipiscing</h3>
+                    </a>
+                    <a href="#">
+                      <h3>Curabitur cursus bibendum mauris placerat</h3>
+                    </a>
+                    <a href="#">
+                      <h3>Sagittis quam nunc platea est</h3>
+                    </a>
+                    <a href="#">
+                      <h3>Nisi, sed dui, ac enim</h3>
+                    </a>
+                    <a href="#">
+                      <h3>Vitae sodales sit id ullamcorper</h3>
+                    </a>
+                  </div>
+                </div>
               </li>
-              <li class="nav-item">
+              <li class="nav-item mega_menu_dropdown">
                 <a class="nav-link" href="#">Scholarships</a>
+                <div class="mega_menu">
+                  <div class="mega_menu_item">
+                    <a href="#">
+                      <h3>Sed ut tincidunt euismod malesuada</h3>
+                    </a>
+                    <a href="#">
+                      <h3>Nunc, sit in varius pulvinar</h3>
+                    </a>
+                  </div>
+                </div>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Press</a>
@@ -90,7 +137,6 @@
         </nav>
       </div>
     </div>
-
   </header>
   <!-- HEADER END-->
 
@@ -113,7 +159,7 @@
       </div>
     </div>
     <div class="img-custom-space-left">
-      <img src="./assets/images/hero.png" alt="intro background">
+      <img src="./assets/images/hero.jpg" alt="intro background">
     </div>
   </section>
   <!-- HERO END-->
@@ -127,8 +173,6 @@
             <h5>latest news</h5>
           </div>
         </div>
-      </div>
-      <div class="row">
         <div class="col-md-12">
           <div class="news-card-list">
             <div class="news-card-list__left">
@@ -144,6 +188,8 @@
                   <h2>Molestie molesti metus, tempus in commodo, semper tellus</h2>
                 </div>
               </a>
+              <a href="#" class="view-all text-bold d-none d-lg-inline-flex align-items-center">See all news <i
+                  class="fa fa-chevron-right"></i></a>
             </div>
             <div class="news-card-list__right">
               <a href="#" class="news-card">
@@ -189,6 +235,8 @@
           </div>
         </div>
       </div>
+      <a href="#" class="view-all text-bold d-inline-flex d-lg-none align-items-center mt-4">See all news <i
+          class="fa fa-chevron-right"></i></a>
     </div>
   </section>
   <!-- NEWS END-->
@@ -215,7 +263,7 @@
       </div>
     </div>
     <div class="img-custom-space-right">
-      <img class="mission-image__" src="./assets/images/mission.png" alt="mission background">
+      <img class="mission-image__" src="./assets/images/mission.jpg" alt="mission background">
     </div>
   </section>
   <!-- MISSION END-->
@@ -293,21 +341,25 @@
           <div class="col-md-12">
             <div class="d-none d-lg-block owl-carousel owl-theme owl-founders">
               <div class="founder">
-                <img class="founder__image" src="./assets/images/founder1.png" alt="founder">
+                <img class="founder__image" src="./assets/images/founder1.jpg" alt="founder">
                 <div class="founder__name">
-                  <h2 class="text-white">Maria Kenter</h2>
+                  <a href="#">
+                    <h2 class="text-white">Maria Kenter</h2>
+                  </a>
                 </div>
               </div>
               <div class="founder">
                 <img class="founder__image" src="./assets/images/founder2.jpg" alt="founder">
                 <div class="founder__name">
-                  <h2 class="text-white">Roger Septimus</h2>
+                  <a href="#">
+                    <h2 class="text-white">Roger Septimus</h2>
+                  </a>
                 </div>
               </div>
             </div>
             <div class="d-block d-lg-none founders-mbl">
               <div class="founder">
-                <img class="founder__image" src="./assets/images/founder1.png" alt="founder">
+                <img class="founder__image" src="./assets/images/founder1.jpg" alt="founder">
                 <div class="founder__name">
                   <a href="#">
                     <h2 class="text-white">Maria Kenter <i class="far fa-chevron-right"></i></h2>
@@ -340,21 +392,30 @@
           </div>
         </div>
         <div class="col-md-12">
-          <div class="owl-carousel owl-theme owl-gallery">
+          <div class="gallery-cards-wrapper">
             <a href="./assets/images/gal1.jpg" class="gallery-card">
-              <img class="gallery-card__image" src="./assets/images/gal1.jpg" alt="gallery 1">
+              <div class="gallery-card__image">
+                <img src="./assets/images/gal1.jpg" alt="gallery 1">
+                <div class="bg-overlay"></div>
+              </div>
               <div class="gallery-card__text">
                 <p>Caption lorem ipsum dolor sit amet</p>
               </div>
             </a>
             <a href="./assets/images/gal2.png" class="gallery-card">
-              <img class="gallery-card__image" src="./assets/images/gal2.png" alt="gallery 2">
+              <div class="gallery-card__image">
+                <img src="./assets/images/gal2.png" alt="gallery 2">
+                <div class="bg-overlay"></div>
+              </div>
               <div class="gallery-card__text">
                 <p>Caption lorem ipsum dolor sit amet</p>
               </div>
             </a>
             <a href="./assets/images/gal3.png" class="gallery-card">
-              <img class="gallery-card__image" src="./assets/images/gal3.png" alt="gallery 3">
+              <div class="gallery-card__image">
+                <img src="./assets/images/gal3.png" alt="gallery 3">
+                <div class="bg-overlay"></div>
+              </div>
               <div class="gallery-card__text">
                 <p>Caption lorem ipsum dolor sit amet</p>
               </div>
@@ -433,27 +494,17 @@
     </div>
   </footer>
   <!-- FOOTER END-->
-  <a href="javascript:void(0)" id="return-to-top">
-    <svg viewBox="0 0 24 24" width="24" height="24" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round"
-      stroke-linejoin="round" class="css-i6dzq1">
-      <polyline points="18 15 12 9 6 15"></polyline>
-    </svg>
-  </a>
+
 
 
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.7.3/js/lightgallery-all.min.js"></script>
   <script src="assets/js/script.js"></script>
-  <script>
-    $(document).ready(function () {
-      $("#lightgallery").lightGallery({
-        selector: ".item"
-      });
-    });
-  </script>
+
 </body>
 
 </html>

@@ -12,3 +12,10 @@
   font-family: $Galaxie;
   font-weight: 400;
 }
+@mixin paragraph-prop-sm {
+  font-size: 0.75rem;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  font-family: $Inter;
+  font-weight: 400;
+}
