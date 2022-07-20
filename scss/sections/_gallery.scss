@@ -12,7 +12,6 @@
     overflow: scroll;
     @media (min-width: 991px) {
       margin-top: -3.75rem;
-      flex-wrap: wrap;
       overflow: unset;
     }
     .gallery-card {
@@ -34,45 +33,13 @@
       .gallery-card__image {
         margin-bottom: 0.75rem;
         position: relative;
-        overflow: hidden;
         img {
           width: 100%;
-          @include transition;
-        }
-        .bg-overlay {
-          position: absolute;
-          background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.36) 100%);
-          mix-blend-mode: normal;
-          top: 0;
-          left: 0;
-          bottom: 0;
-          right: 0;
-          opacity: 0;
-          @include transition;
         }
       }
       .gallery-card__text {
-        @include transition;
         p {
-          color: $text-grey;
           margin-bottom: 0;
-          @include transition;
-        }
-      }
-      &:hover {
-        .gallery-card__text {
-          transform: translate(25px, -60px);
-          p {
-            color: $light;
-          }
-        }
-        .gallery-card__image {
-          img {
-            transform: scale(1.1);
-          }
-        }
-        .bg-overlay {
-          opacity: 1;
         }
       }
     }

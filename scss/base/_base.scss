@@ -1,18 +1,9 @@
 /*
               Table of Content
               1: Global CSS
-              2: Headings
-              3: Fonts Family
-              4: Font Colors
-              5: Font Size
-              6: Font-Weight
-              7: Margins
-              8: Paddings
-              9: Return to Top
-              10: Page Not Found
-              11: Border-radius
-              12: Positions
-             
+              2: Margins
+              3: Paddings
+              4: shared elements
 */
 
 // 1: Global CSS Start
@@ -49,118 +40,18 @@ img {
   max-width: 100%;
 }
 
-.page-section {
-  padding-bottom: 3.75rem;
-  position: relative;
-  @media (min-width: 991px) {
-    padding-bottom: 7.5rem;
-  }
-  .page-section__title {
-    margin-bottom: 1rem;
-    @media (min-width: 991px) {
-      margin-bottom: 3.75rem;
-    }
-    & > h5 {
-      color: $primary;
-      text-transform: uppercase;
-    }
-  }
-  .page-section__title--white h5 {
-    color: $light;
-  }
-}
 // 1: Global CSS End
 
-//2: Headings Start
-
-//2: Headings End
-
-// 3: Fonts Family Start
-
-// 3: Fonts Family End
-
-// 4: Font Colors Start
-.text-danger {
-  color: red;
-}
-.text-grey {
-  color: $text-grey !important;
-}
-.text-secondary {
-  color: $secondary !important;
-}
-// 4: Font Colors End
-
-// 5: Font Size Start
-.font-8 {
-  font-size: 0.5rem !important;
-}
-.font-10 {
-  font-size: 0.625rem !important;
-}
-.font-12 {
-  font-size: 0.75rem !important;
-}
-.font-14 {
-  font-size: 0.875rem !important;
-}
-.font-16 {
-  font-size: 1rem !important;
-}
-.font-18 {
-  font-size: 1.125rem !important;
-}
-.font-20 {
-  font-size: 1.25rem !important;
-}
-.font-24 {
-  font-size: 1.5rem !important;
-}
-.font-32 {
-  font-size: 2rem !important;
-}
-.font-36 {
-  font-size: 2.25rem !important;
-}
-.font-40 {
-  font-size: 2.5rem !important;
-}
-.font-48 {
-  font-size: 3rem !important;
-}
-.ls-1 {
-  letter-spacing: 1px;
-}
-// 5: Font Size End
-
-// 6: Font Weights Start
-.fw-400 {
-  font-weight: 400;
-}
-.fw-500 {
-  font-weight: 500;
-}
-.fw-600 {
-  font-weight: 600;
-}
-.fw-700 {
-  font-weight: 700;
-}
-.fw-900 {
-  font-weight: 900;
-}
-// 6: Font Weights End
-
-// 7: margins
+// 2: margins
 .mr-20 {
   margin-right: 1.25rem;
 }
 .mr-32 {
   margin-right: 2rem;
 }
-// 8: padding end
+// 2: margin end
 
-// 8: padding
+// 3: padding
 .py-20 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
@@ -177,9 +68,9 @@ img {
   padding-top: 4.375rem;
   padding-bottom: 4.375rem;
 }
+// 3: padding end
 
-// 8: padding end
-
+// 4: shared elements
 .custom-space-left {
   padding: 0 2rem 8.5rem 1rem;
   margin-left: 1rem;
@@ -309,3 +200,72 @@ img {
     }
   }
 }
+
+.page-section {
+  padding-bottom: 3.75rem;
+  position: relative;
+  @media (min-width: 991px) {
+    padding-bottom: 7.5rem;
+  }
+  .page-section__title {
+    margin-bottom: 1rem;
+    @media (min-width: 991px) {
+      margin-bottom: 3.75rem;
+    }
+    & > h5 {
+      color: $primary;
+      text-transform: uppercase;
+    }
+  }
+  .page-section__title--white h5 {
+    color: $light;
+  }
+}
+
+.img-scale-effect {
+  .img-wrapper {
+    overflow: hidden;
+    img {
+      @include transition;
+    }
+  }
+  &:hover {
+    img {
+      transform: scale(1.1);
+      @include transition;
+    }
+  }
+}
+
+.img-content-effect {
+  .bg-overlay {
+    position: absolute;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.36) 100%);
+    mix-blend-mode: normal;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    @include transition;
+  }
+  .text-content {
+    p {
+      color: $text-grey;
+      @include transition;
+    }
+    @include transition;
+  }
+  &:hover {
+    .text-content {
+      transform: translate(25px, -60px);
+      p {
+        color: $light;
+      }
+    }
+    .bg-overlay {
+      opacity: 1;
+    }
+  }
+}
+// 4: shared elements end
