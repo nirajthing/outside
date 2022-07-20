@@ -31,7 +31,7 @@
       }
       .news-card-small {
         display: flex;
-        align-items: start;
+        align-items: stretch;
         .news-card {
           @media (min-width: 991px) {
             width: 50%;
