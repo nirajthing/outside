@@ -1,7 +1,7 @@
 $(document).ready(function () {
   //LOADING SPINNER
   function loaderClose() {
-    $('#loading-bar-spinner').fadeOut()
+    $('.loading-bar-spinner').fadeOut()
   }
   setTimeout(loaderClose, 500)
 
@@ -81,12 +81,12 @@ $(document).ready(function () {
       gsap.from('.news-card', {
         scrollTrigger: {
           trigger: '.news-card',
-          start: 'top top',
+          start: 'top center',
           end: 'bottom center',
           scrub: 1,
         },
         duration: 1,
-        y: 200,
+        y: 100,
         stagger: 0.5,
       })
 

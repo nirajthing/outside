@@ -1,4 +1,4 @@
-#loading-bar-spinner.spinner {
+.loading-bar-spinner {
   position: fixed;
   left: 0;
   top: 0;
@@ -10,16 +10,15 @@
   background: $light;
   z-index: 3;
   height: 100vh;
-}
-
-#loading-bar-spinner.spinner .spinner-icon {
-  width: 2.5rem;
-  height: 2.5rem;
-  border: solid 8px transparent;
-  border-top-color: $primary;
-  border-left-color: $primary;
-  border-radius: 50%;
-  animation: loading-bar-spinner 400ms linear infinite;
+  .spinner-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    border: solid 8px transparent;
+    border-top-color: $primary;
+    border-left-color: $primary;
+    border-radius: 50%;
+    animation: loading-bar-spinner 400ms linear infinite;
+  }
 }
 
 @keyframes loading-bar-spinner {
